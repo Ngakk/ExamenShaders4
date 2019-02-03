@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Shader Forge_Waterfall 1
-  m_Shader: {fileID: 4800000, guid: 74a81dbb82244c54db6d82036d3e4558, type: 3}
+  m_Name: Shader Forge_Kawa
+  m_Shader: {fileID: 4800000, guid: fff0a391cde9d214d91c00aa87c790bf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18,12 +18,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Displacement:
+    - _DisplacementTexture:
         m_Texture: {fileID: 2800000, guid: aa88289adde4d6345995d2b671b610e8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseMap:
+    - _FoamNoise:
         m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 5faaf61a1fc056541a01fcc5168e57c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OffsetNoise:
@@ -31,9 +35,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _OffsetMag: 0.3259
+    - _Cutoff: 0.5
+    - _DepthBlend: 0.98
+    - _FoamPanVel: 0.1
+    - _FoamThreshold: 0.284
+    - _OffsetMag: 0.261
     - _Steps: 5
-    - _Tesellation: 10
+    - _Tesselation: 10
     - _Velocity: 0.25
     m_Colors:
     - _Dark1: {r: 0.05678178, g: 0.2316239, b: 0.4150943, a: 1}
